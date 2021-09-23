@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/index.css">
+  <script src="js/index.js"></script>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+<script type="text/javascript">
+(function() {
+emailjs.init("user_mmO3bT8d0hfv072iXefin");
+})();
+</script>
+  <title>Toggle </title>
+</head>
+<body>
+
+  
+      
+    <nav class="nav"id="nav">
+  <div class="">
+              <img class="logo" src="logo.png" alt=""id="logo" />
+  </div>
+    <i class="fas fa-bars" onclick="togglebtn()" id="btn"></i>
+ 
+	  <a href="index.html" class="demo">Home</a>
+	  <a href="#"class="demo">Work</a>
+	  <a href="#"class="demo">Contact </a>
+	  <a href="#"class="demo">Abute</a>
+	  <a href="#"class="demo">Clint</a>
+	  
+	</nav>
+	<br />
+	<br />
+	<br />
+		<br />
+	<br />
+	<br />
+  <div class="cercel">
+    
+  </div>
+  
+    <!--Start is the main section for Home  -->
+    <section>
+        <div class="cercel1">
+    
+  </div>
+    <div class="container">
+      <form action="https://formspree.io/f/xzbyoojq" id="test-form" method="POST">
+
+        <div class="form-group">
+          <label for="Name">Name</label>
+          <input type="text" id="firstName" name="Name">
+        </div>
+
+        <div class="form-group">
+          <label for="Password">Password</label>
+          <input type="password" id="lastName" name="Password">
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="Email">
+        </div>
+
+        <div class="form-group">
+          <label for="massage">Massage</label>
+          <textarea name="massage" id="massage" rows="10" maxlength="200"></textarea>
+        </div>
+
+        <button type="submit" id="test-form-submit" >Submit</button>
+      </form>
+    </div>
+    <div id="status"></div>
+  </section>
+        <!--End is the main section for Home  -->
+	<!--script for develops html documents-->
+	<script type="text/javascript" charset="utf-8">
+	  var btn=document.getElementById('nav')
+	  var button=document.getElementById('btn')
+	  var logo=document.getElementById('logo')
+	  function togglebtn(){
+	    btn.classList.toggle('active')
+	    logo.classList.toggle('rahid')
+	   
+	   button.classList.toggle('fas fa-times')
+	  }
+	  
+	</script>
+
+</body>
+</html>
